@@ -1,16 +1,15 @@
-/* Write your global styles here, in PostCSS syntax */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  @apply bg-gray-50;
+  @apply bg-orange-100;
 }
 main {
-  @apply grid place-items-center mx-auto sm:my-12 sm:py-8 bg-gray-200;
+  @apply grid place-items-center mx-auto sm:my-12 sm:py-12 bg-orange-50;
 }
 header {
-  @apply grid place-items-center w-full sm:w-96 h-16 bg-orange-400 rounded-t-sm;
+  @apply grid place-items-center w-full sm:w-96 h-16 bg-orange-400 rounded-t;
 }
 h1 {
   @apply text-center text-2xl font-semibold whitespace-nowrap px-2;
@@ -25,10 +24,10 @@ aside {
   @apply sm:w-96 w-full bg-blue-500/60;
 }
 form {
-  @apply sm:w-96 w-full px-4 pb-4 flex flex-row items-start justify-start flex-wrap bg-orange-200 rounded-b-sm;
+  @apply sm:w-96 w-full px-4 pb-4 flex flex-row items-start justify-start flex-wrap bg-orange-200 rounded-b;
 }
 form > label {
-  @apply w-1/2 my-2 flex flex-col items-start justify-start text-sm font-semibold;
+  @apply w-1/2 mt-2 mb-4 flex flex-col items-start justify-start text-sm font-semibold;
 }
 form > label > div {
   @apply w-full h-8 mt-2 px-2 flex flex-row items-center justify-start whitespace-nowrap overflow-x-auto overflow-y-hidden text-xl font-medium font-serif tracking-wider bg-orange-300 rounded-tr-sm rounded-br-sm;
@@ -41,7 +40,7 @@ form > label:has(input:focus) + label > div {
   @apply outline outline-2 outline-offset-0 outline-orange-500;
 }
 form > div {
-  @apply flex flex-row items-start justify-end flex-wrap w-full p-1 bg-orange-100/50 rounded-sm;
+  @apply flex flex-row items-start justify-end flex-wrap w-full p-1 bg-orange-100 rounded-sm;
 }
 form > div > div:last-of-type > button {
   @apply bg-orange-300;
